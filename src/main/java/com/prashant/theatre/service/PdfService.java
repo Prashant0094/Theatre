@@ -19,9 +19,9 @@ public class PdfService {
 	    doc.open();
 
 	    // logo
-	   // Image logo = Image.getInstance("src/main/resources/logo.png");
-	   // logo.scaleToFit(100, 100);
-	   // doc.add(logo);
+	    Image logo = Image.getInstance(getClass().getClassLoader().getResource("logo.jpg"));
+	    logo.scaleToFit(200, 200);
+	    doc.add(logo);
 
 	    // User + Show info
 	    doc.add(new Paragraph("Name: " + summary.getUserName()));

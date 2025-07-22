@@ -20,7 +20,6 @@ import lombok.Setter;
 public class BookingRequestDto {
 	private String showId;
 	private List<String> seatIds;
-	private int userId;
 
 	public Booking toEntity(User user, Show show, Seat seat) {
 		Booking booking = new Booking();

@@ -22,4 +22,10 @@ public class UserServiceImpl implements UserService{
 						.toList();
 	}
 
+	@Override
+	public Object findByUserEmail(String email) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

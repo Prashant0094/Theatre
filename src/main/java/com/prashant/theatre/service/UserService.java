@@ -6,4 +6,6 @@ import com.prashant.theatre.dto.BookingResponseDto;
 
 public interface UserService {
 	public List<BookingResponseDto> getBookingsByUser(int userId);
+
+	public Object findByUserEmail(String email);
 }
